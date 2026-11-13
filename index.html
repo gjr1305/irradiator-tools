@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XRad225IR irradiator tools</title>
+<style>
+  :root { --navy:#16124d; --blue:#1544ff; --muted:#5b5a7a; --bg:#f6f6fb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family: Arial, Helvetica, sans-serif; background:var(--bg); color:var(--navy); }
+  main { max-width:640px; margin:0 auto; padding:28px 18px 40px; }
+  h1 { font-size:1.5rem; margin:0 0 6px; }
+  .sub { color:var(--muted); margin:0 0 24px; font-size:0.95rem; line-height:1.4; }
+  a.card { display:block; background:#fff; border-radius:14px; padding:18px 18px 16px; margin-bottom:14px;
+           text-decoration:none; color:inherit; box-shadow:0 1px 4px rgba(22,18,77,.12); }
+  a.card:active { transform:scale(.99); }
+  .card h2 { font-size:1.1rem; margin:0 0 6px; color:var(--blue); }
+  .card p { margin:0; line-height:1.45; font-size:0.95rem; }
+  .go { display:inline-block; margin-top:10px; font-weight:bold; font-size:0.9rem; }
+  footer { color:var(--muted); font-size:0.8rem; margin-top:24px; line-height:1.4; }
+</style>
+</head>
+<body>
+<main>
+  <h1>XRad225IR irradiator tools</h1>
+  <p class="sub">Open tools from our TG-61 characterisation of the XRad225IR cabinet irradiator. Geofrey John, Adelaide University.</p>
+
+  <a class="card" href="https://gjr1305.github.io/XRad225IR-Dose-Irradiation-Time-Calculator/">
+    <h2>Dose and irradiation time calculator</h2>
+    <p>Gives the irradiation time for a target dose. It uses our measured values for this machine: dose rate at the cells, backscatter, the 1.94 s ramp-up correction and timer linearity. We use it for all our cell irradiations.</p>
+    <span class="go">Open calculator →</span>
+  </a>
+
+  <a class="card" href="https://gjr1305.github.io/Irradiator-commissioning-wizard/">
+    <h2>Irradiator commissioning wizard</h2>
+    <p>For other labs. It walks you through the measurements step by step, takes your own data, and builds a calculator for your machine at the end.</p>
+    <span class="go">Open wizard →</span>
+  </a>
+
+  <a class="card" href="https://gjr1305.github.io/Cabinet-Irradiator-Trainer/">
+    <h2>Cabinet irradiator trainer</h2>
+    <p>A browser simulator for new users, with a 3D cabinet and a console that works like the real one: key switch, door interlock, warm-up and filter check. Three practice scenarios (a 2 Gy exposure on a 6-well plate, spotting mistakes in a set-up, measuring the first HVL) and a dose explorer for distance, copper filtration, ramp-up and dose mode. It runs on our measured beam data, but it is for teaching only, not for working out real doses.</p>
+    <span class="go">Open trainer →</span>
+  </a>
+
+</main>
+</body>
+</html>
